@@ -21,7 +21,7 @@ public class PerfectNumberFinder {
     public List<Integer> findInRange(int limit) {
 
         List<Integer> result = IntStream.rangeClosed(1, limit)
-                .filter(this::isPerfect) //
+                .filter(this::isPerfect)
                 .boxed()
                 .collect(Collectors.toList());
 
