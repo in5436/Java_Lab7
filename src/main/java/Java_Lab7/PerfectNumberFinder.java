@@ -12,7 +12,7 @@ public class PerfectNumberFinder {
         }
 
         int sumOfDivisors = IntStream.rangeClosed(1, number / 2)
-                .filter(d -> number % d == 0) //
+                .filter(d -> number % d == 0)
                 .sum();
 
         return sumOfDivisors == number;
